@@ -48,4 +48,9 @@ def data_manipulate():
     # Answer: Yes, it's containing outlier data in "Total Spent" column.
 
     # Question 3: Why is it contain Nulls in those columns?
-    # Answer: 
+    # Answer:
+    # The dataset contains null values in several columns, which can be attributed to various reasons:
+    # 1. **Price Per Unit**: Null values in this column could indicate that the price information was not available or not applicable for certain transactions.
+    # 2. **Quantity**: Similar to the price per unit, the quantity might not have been recorded for some transactions, leading to null values.
+    # 3. **Total Spent**: If either the price per unit or quantity is missing, the total spent cannot be calculated, resulting in null values in this column.
+    # These null values can arise due to data entry errors, missing information at the time of transaction, or specific business rules that do not require certain fields to be filled for some transactions.
