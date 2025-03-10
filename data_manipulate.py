@@ -1,9 +1,14 @@
 import pandas as pd
-import matplotlib.pyplot as plt
 
 def data_manipulate():
 
-    df = pd.read_csv('retail_store_sales.csv')
+    import os
+    
+    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+    
+    csv_path = os.path.join(BASE_DIR, "retail_store_sales.csv")
+
+    df = pd.read_csv(csv_path)
 
     print(df.head())
 
@@ -17,10 +22,10 @@ def data_manipulate():
 
 
     # Check outlier for numerical columns
-    list = ['Price Per Unit', 'Quantity', 'Total Spent']
+    Col = ['Price Per Unit', 'Quantity', 'Total Spent']
 
     # Making the for loop to check for outlier data
-    for i in list:
+    for i in Col:
 
         Q1 = df[i].quantile(0.25)
 
