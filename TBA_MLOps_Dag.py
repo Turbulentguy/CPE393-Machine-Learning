@@ -19,7 +19,7 @@ default_args = {
 
 # Define DAG
 with DAG(
-    '3469_Dag',
+    'TBA_MLOps_Dag',
     default_args=default_args,
     schedule='0 0 * * *',  
     catchup=False,
